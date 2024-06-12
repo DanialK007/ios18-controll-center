@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="flex w-screen h-screen items-center justify-center">
+        <div class="relative w-fit border-[10px] border-black rounded-[3rem] overflow-hidden bg-[url('img/home_screen.png')]">
+            <img src="img/home_screen.png" id="wallpaper" alt="" class="saturate-150 duration-300">
+            <div class="absolute w-full p-[0.55rem] top-0 left-0 z-[999] flex items-center justify-center">
+                <button id="dynamic_island" class="w-[95px] hover:w-[105px] active:w-[95px] h-[28px] rounded-s-full duration-200 rounded-e-full bg-black"></button>
+            </div>
+
+            <div id="controll_center"
+                class="absolute opacity-0 w-full h-full z-10 top-0 left-0 duration-300 flex items-center justify-center">
+                <div id="controlls"
+                    class="grid grid-cols-2 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem]">
+                    <div
+                        class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-2 p-[0.6rem]">
+                        <button id="airplane" class="duration-500 bg-white/10 col-span-1 row-span-1 rounded-full">
+                            <img src="img/airplane.png" class="w-full h-full invert p-2" alt="">
+                        </button>
+                        <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
+                            <img src="img/airdrop.png" class="w-full h-full p-[0.3rem] brightness-150" alt="">
+                        </button>
+                        <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
+                            <img src="img/wifi.png" class="w-full h-full p-[0.6rem] brightness-150 invert" alt="">
+                        </button>
+                        <div class="col-span-1 row-span-1 grid grid-cols-2 grid-rows-2 gap-1 opacity-80">
+                            <div class="bg-green-400 rounded-full">
+                                <img src="img/cellular.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                            </div>
+                            <div class="bg-blue-500 rounded-full">
+                                <img src="img/bluetooth.png" alt="" class="w-full h-full p-[0.2rem] brightness-150 invert">
+                            </div>
+                            <div class="bg-black/10 rounded-full">
+                                <img src="img/link.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                            </div>
+                            <div class="bg-white/10 rounded-full">
+                                <img src="img/mirror.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-rows-2 grid-cols-1 gap-2 p-3">
+                        <div class="flex justify-between">
+                            <div class="h-[42px] w-[42px] bg-slate-300/80 rounded-xl"></div>
+                            <div class="h-[27px] w-[27px] bg-white/20 rounded-full">
+                                <img src="img/airdrop.png" alt="" class="w-full h-full p-1 brightness-150">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="text-white text-[0.7rem] ps-1">Not Playing</div>
+                            <div class="flex items-center justify-center gap-3 p-1">
+                                <img src="img/next.png" alt="" class="h-[12px] invert rotate-180 scale-x-150">
+                                <img src="img/play.png" alt="" class="h-[22px] invert">
+                                <img src="img/next.png" alt="" class="h-[12px] invert scale-x-150">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/rotate.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/screenMirror.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
+                            <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
+                                <img src="img/focus.png" alt="" class="w-full h-full p-2 invert">
+                            </div>
+                            <div class="text-white text-sm">Focus</div>
+                        </button>
+                    </div>
+                    <div
+                        class="ease-out h-[115px] rounded-[25px] grid grid-cols-2 gap-2">
+                        <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
+                            <div class="bg-white/90 w-full h-2/3 flex items-end justify-center pb-2">
+                                <img src="img/brightness.png" alt="" class="w-[26px] h-[26px] opacity-90">
+                            </div>
+                        </div>
+                        <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
+                            <div class="bg-white/90 w-full h-1/3 flex items-end justify-center pb-2">
+                                <img src="img/speaker.png" alt="" class="w-[27px] h-[27px] opacity-90">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/torch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn3 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/record.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/battery.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/stopwatch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                    </div>
+                    <div
+                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
+                            <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
+                                <img src="img/lock.png" alt="" class="w-full h-full p-2 invert scale-x-90">
+                            </div>
+                            <div class="text-white text-[0.6rem] flex flex-col">
+                                <div class="-mb-1 opacity-80">Entrance</div>
+                                <div class="text-sm">Door</div>
+                                <div class="-mt-1 opacity-80">Locked</div>
+                            </div>
+                        </button> 
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 ps-3 gap-1">
+                            <div class="rounded-full h-[35px] w-[35px]">
+                                <img src="img/leave.png" alt="" class="w-full h-full p-[0.3rem] invert">
+                            </div>
+                            <div class="text-white text-[0.84rem] flex flex-col justify-center">
+                                <div class="-mb-1">Leave</div>
+                                <div class="-mt-1">Home</div>
+                            </div>
+                        </button> 
+                    </div>
+                    
+                    <div
+                        class="controll scale-0 opacity-0 duration-[1000ms] ease-out bg-black/25 h-[115px] rounded-[25px] flex flex-col justify-between p-3">
+                        <img src="img/bulb.png" alt="" class="w-[30px] h-[30px] invert">
+                        <div class="text-white text-[0.75rem] p-1">Scene or Accessory</div>
+                    </div>
+                    <div
+                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/shazam.png" alt="" class="w-full h-full p-[0.65rem] brightness-0 invert">
+                        </button>
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/alarm.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/accessibility.png" alt="" class="w-full h-full p-[0.8rem] brightness-0 invert">
+                        </button>
+                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                            <img src="img/calculator.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="controll_center2" class="absolute bg-transparent opacity-0 w-full h-full z-20 top-0 left-0 duration-500 flex items-center justify-center">
+                <div class="">hello</div>
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+        const dynamic_island = document.getElementById("dynamic_island");
+        const controll_center = document.getElementById("controll_center");
+        const controlls = document.getElementById("controlls");
+        const controlElements = document.querySelectorAll(".controll");
+        const buttons = document.querySelectorAll(".btn");
+        const buttons2 = document.querySelectorAll(".btn2");
+        const buttons3 = document.querySelectorAll(".btn3");
+        const buttons4 = document.querySelectorAll(".btn4");
+        const airplane = document.getElementById("airplane");
+        const wallpaper = document.getElementById("wallpaper");
+
+        dynamic_island.addEventListener("click", () => {
+            controll_center.classList.toggle("backdrop-blur-lg");
+            controll_center.classList.toggle("opacity-0");
+            controlls.classList.toggle("scale-90");
+            wallpaper.classList.toggle("scale-95");
+            wallpaper.classList.toggle("blur-sm");
+
+            setTimeout(() => {
+                controlElements.forEach(controll => {
+                    controll.classList.toggle("scale-0");
+                    controll.classList.toggle("opacity-0");
+                });
+            }, 300);
+        });
+
+        airplane.addEventListener("click", () => {
+            airplane.classList.toggle("bg-white/10");
+            airplane.classList.toggle("bg-green-400");
+
+            if (airplane.classList.contains("bg-green-400")) {
+                buttons.forEach(button => {
+                    button.classList.remove("bg-blue-500");
+                    button.classList.add("bg-white/10");
+                    button.disabled = true;
+                });
+            } else {
+                buttons.forEach(button => {
+                    button.classList.remove("bg-white/10");
+                    button.classList.add("bg-blue-500");
+                    button.disabled = false;
+                });
+            }
+        });
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                if (!airplane.classList.contains("bg-green-400")) {
+                    button.classList.toggle("bg-white/10");
+                    button.classList.toggle("bg-blue-500");
+                }
+            });
+        });
+        buttons2.forEach(button2 => {
+            button2.addEventListener("click", () => {
+                // button2.classList.toggle("bg-white/10");
+                button2.classList.toggle("bg-black/25");
+                button2.classList.toggle("bg-black/80");
+                button2.classList.toggle("invert");
+                button2.classList.toggle("opacity-80");
+            });
+        });
+        buttons3.forEach(button3 => {
+            button3.addEventListener("click", () => {
+                // button3.classList.toggle("bg-white/10");
+                button3.classList.toggle("bg-black/25");
+                button3.classList.toggle("bg-red-600/75");
+            });
+        });
+        buttons4.forEach(button4 => {
+            button4.addEventListener("click", () => {
+                // button4.classList.toggle("bg-white/10");
+                button4.classList.toggle("bg-black/25");
+                button4.classList.toggle("bg-yellow-500/75");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
