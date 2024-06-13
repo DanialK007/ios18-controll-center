@@ -902,6 +902,10 @@ video {
   background-color: rgb(234 179 8 / 0.75);
 }
 
+.bg-yellow-400\/75 {
+  background-color: rgb(250 204 21 / 0.75);
+}
+
 .bg-\[url\(\'img\/home_screen\.png\'\)\] {
   background-image: url('img/home_screen.png');
 }
@@ -960,6 +964,10 @@ video {
 
 .ps-3 {
   padding-inline-start: 0.75rem;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-\[0\.6rem\] {

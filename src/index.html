@@ -131,11 +131,11 @@
                         </button> 
                     </div>
                     
-                    <div
-                        class="controll scale-0 opacity-0 duration-[1000ms] ease-out bg-black/25 h-[115px] rounded-[25px] flex flex-col justify-between p-3">
+                    <button 
+                        class="controll btn2 scale-0 opacity-0 duration-[1000ms] ease-out bg-black/25 h-[115px] rounded-[25px] flex flex-col justify-between p-3">
                         <img src="img/bulb.png" alt="" class="w-[30px] h-[30px] invert">
-                        <div class="text-white text-[0.75rem] p-1">Scene or Accessory</div>
-                    </div>
+                        <div class="text-white text-[0.75rem] text-start p-1">Scene or Accessory</div>
+                    </button>
                     <div
                         class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
                         <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
@@ -203,7 +203,7 @@
                     controll.classList.toggle("scale-0");
                     controll.classList.toggle("opacity-0");
                 });
-            }, 300);
+            }, 200);
         });
         
         cellularBtn.addEventListener("click", () => {
@@ -236,7 +236,7 @@
                 });
                 setTimeout(() => {
                     controlls.classList.remove("opacity-0", "scale-90");
-                }, 300);
+                }, 100);
             }, 300);
         });
 
@@ -290,7 +290,7 @@
             button4.addEventListener("click", () => {
                 // button4.classList.toggle("bg-white/10");
                 button4.classList.toggle("bg-black/25");
-                button4.classList.toggle("bg-yellow-500/75");
+                button4.classList.toggle("bg-yellow-400/75");
             });
         });
 
