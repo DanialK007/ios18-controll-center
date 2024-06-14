@@ -11,10 +11,12 @@
 <body>
     <div class="flex w-screen h-screen items-center justify-center">
         <div class="relative w-fit border-[10px] border-black rounded-[3rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
-            <img src="img/home_screen.png" id="wallpaper" alt="" class="saturate-150 duration-300">
-            <div class="absolute w-full p-[0.55rem] top-0 left-0 z-[999] flex items-center justify-center">
-                <button id="dynamic_island" class="w-[95px] hover:w-[105px] active:w-[95px] h-[28px] rounded-s-full duration-200 rounded-e-full bg-black"></button>
+            <img src="img/home_screen.png" id="wallpaper" alt="" class="duration-300">
+            <div class="absolute w-full p-[0.55rem] top-0 left-0 z-[888] flex items-center justify-center">
+                <button id="dynamic_island" class="w-[95px] hover:w-[105px] active:w-[95px] h-[28px] rounded-[28px] duration-500 ease-out bg-black"></button>
             </div>
+
+            <button id="ctrlBtn" class="absolute top-2 right-5 w-20 h-8 z-[899] bg-transparent"></button>
 
             <div id="controll_center"
                 class="absolute opacity-0 w-full h-full z-10 top-0 left-0 duration-300 flex items-center justify-center">
@@ -177,6 +179,7 @@
 
     <script>
         const dynamic_island = document.getElementById("dynamic_island");
+        const ctrlBtn = document.getElementById("ctrlBtn");
         const cellularBtn = document.getElementById("cellularBtn");
         const cellularOff = document.getElementById("cellularOff");
         const controll_center = document.getElementById("controll_center");
@@ -192,6 +195,15 @@
         const wallpaper = document.getElementById("wallpaper");
 
         dynamic_island.addEventListener("click", () => {
+            dynamic_island.classList.toggle("w-[95px]");
+            dynamic_island.classList.toggle("hover:w-[105px]");
+            dynamic_island.classList.toggle("active:w-[95px]");
+            dynamic_island.classList.toggle("w-full");
+            dynamic_island.classList.toggle("h-[28px]");
+            dynamic_island.classList.toggle("h-[180px]");
+        })
+
+        ctrlBtn.addEventListener("click", () => {
             controll_center.classList.toggle("backdrop-blur-lg");
             controll_center.classList.toggle("opacity-0");
             controlls.classList.toggle("scale-90");
