@@ -10,10 +10,36 @@
 
 <body>
     <div class="flex w-screen h-screen items-center justify-center">
-        <div class="relative w-fit border-[10px] border-black rounded-[3rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
+        <div class="relative w-fit border-[10px] border-black rounded-[3.2rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
             <img src="img/home_screen.png" id="wallpaper" alt="" class="duration-300">
             <div class="absolute w-full p-[0.55rem] top-0 left-0 flex items-center justify-center">
-                <button id="dynamic_island" class="w-[95px] hover:w-[105px] z-[9999] active:w-[95px] h-[28px] rounded-[28px] duration-500 ease-out bg-black"></button>
+                <button id="dynamic_island" class="w-[95px] hover:w-[105px] z-[9999] active:w-[95px] h-[28px] rounded-[2.1rem] duration-500 ease-out bg-black overflow-hidden">
+
+                    <div id="dynamic_control" class="px-4 py-5 text-white opacity-0">
+                        <div class="flex justify-between h-fit">
+                            <div class="flex">
+                                <img src="img/music.png" alt="" class="w-[50px] h-[50px] rounded-xl">
+                                <div class="">
+                                    <div class="text-lg mt-1 -mb-2 ps-2">Better now</div>
+                                    <div class="text-sm mb-2">Post Malone</div>
+                                </div>
+                            </div>
+                            <img src="img/voice.png" alt="" class="h-[30px] invert">
+                        </div>
+                        <div class="flex px-2 pt-2 pb-1 items-center gap-2">
+                            <div class="">2:16</div>
+                            <div class="h-[0.4rem] flex-grow bg-white/20 rounded-s-full rounded-e-full overflow-hidden">
+                                <div class="w-2/3 h-full bg-white"></div>
+                            </div>
+                            <div class="">3:48</div>
+                        </div>
+                        <div class="flex items-center justify-center gap-5">
+                            <img src="img/next.png" alt="" class="h-5 scale-x-150 invert rotate-180">
+                            <img src="img/play.png" alt="" class="h-8 invert">
+                            <img src="img/next.png" alt="" class="h-5 scale-x-150 invert">
+                        </div>
+                    </div>
+                </button>
             </div>
 
             <button id="ctrlBtn" class="absolute top-2 right-5 w-20 h-8 z-[200] bg-transparent"></button>
@@ -178,6 +204,7 @@
 
     <script>
         const dynamic_island = document.getElementById("dynamic_island");
+        const dynamic_control = document.getElementById("dynamic_control");
         const ctrlBtn = document.getElementById("ctrlBtn");
         const ctrlOff = document.getElementById("ctrlOff");
         const cellularBtn = document.getElementById("cellularBtn");
@@ -200,7 +227,9 @@
             dynamic_island.classList.toggle("active:w-[95px]");
             dynamic_island.classList.toggle("w-full");
             dynamic_island.classList.toggle("h-[28px]");
-            dynamic_island.classList.toggle("h-[180px]");
+            dynamic_island.classList.toggle("h-[150px]");
+            dynamic_control.classList.toggle("opacity-0");
+            dynamic_control.classList.toggle("duration-300");
         })
 
         ctrlBtn.addEventListener("click", () => {
