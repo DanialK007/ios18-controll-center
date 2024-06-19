@@ -46,9 +46,33 @@
             
             <div id="controll_center"
             class="absolute opacity-0 w-full h-full z-10 top-0 left-0 duration-300 flex items-center justify-center">
+
+                <div id="status" class="absolute opacity-0 top-0 left-0 pt-2 w-full -translate-y-10 duration-300">
+                    <div class=" w-full flex justify-between px-8 text-white text-[0.9rem]">
+                        <div class="text-white text-lg font-semibold">+</div>
+                        <img src="img/power.png" alt="" class="mt-2 h-4 invert">
+                    </div>
+    
+                    <div class="mt-5 w-full flex justify-between px-8 text-white text-[0.9rem]">
+                        <div class="flex items-center gap-1">
+                            <img src="img/data.png" alt="" class="h-3 invert brightness-0">
+                            4G LTE
+                            <img src="img/wifi.png" alt="" class="h-4 invert">
+                        </div>
+                        <div class="flex items-center gap-1">
+                            @ 74%
+                            <img src="img/battery.png" alt="" class="h-6 invert">
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <button id="ctrlOff" class="absolute top-0 left-0 w-full h-full z-[500] hidden"></button>
                 <div id="controlls"
-                    class="grid grid-cols-2 z-[600] gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem]">
+                    class="grid pt-8 grid-cols-2 z-[600] gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem]">
+                    
+                    
                     <div
                         class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-2 p-[0.6rem]">
                         <button id="airplane" class="duration-500 bg-white/10 col-span-1 row-span-1 rounded-full">
@@ -101,7 +125,7 @@
                         <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
                             <img src="img/screenMirror.png" alt="" class="w-full h-full p-3 brightness-0 invert">
                         </button>
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
+                        <button id="ctrl3Btn" class="controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
                             <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
                                 <img src="img/focus.png" alt="" class="w-full h-full p-2 invert">
                             </div>
@@ -181,22 +205,31 @@
                         </button>
                     </div>
                 </div>
+
+                <button id="cellularOff" class="absolute top-0 left-0 w-full h-full z-[920] controll2 scale-0 duration-[500ms]"></button>
                 <div id="controlls2"
                     class="grid z-[600] relative grid-cols-1 grid-rows-8 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[1100ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 z-[950] scale-0 ease-out duration-[1200ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[1100ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll2 scale-0 ease-out duration-[1200ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
                 
                 </div>
-                <button id="cellularOff" class="absolute top-0 left-0 w-full h-full z-[990] controll2 scale-0 duration-[500ms]">
-                    <!-- <img src="img/cross.png" alt="" class="w-full h-full p-4 brightness-0 invert"> -->
-                </button>
-            
+
+                <button id="ctrl3BtnOff" class="absolute top-0 left-0 w-full h-full z-[900] controll2 scale-0 duration-[500ms]"></button>
+                <div id="controlls3"
+                class="grid z-[600] relative grid-cols-1 grid-rows-6 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
+                    <div class="controll3 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll3 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll3 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll3 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll3 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    <div class="controll3 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                </div>
             </div>
             
         </div>
@@ -205,15 +238,20 @@
     <script>
         const dynamic_island = document.getElementById("dynamic_island");
         const dynamic_control = document.getElementById("dynamic_control");
+        const status = document.getElementById("status");
         const ctrlBtn = document.getElementById("ctrlBtn");
+        const ctrl3Btn = document.getElementById("ctrl3Btn");
+        const ctrl3BtnOff = document.getElementById("ctrl3BtnOff");
         const ctrlOff = document.getElementById("ctrlOff");
         const cellularBtn = document.getElementById("cellularBtn");
         const cellularOff = document.getElementById("cellularOff");
         const controll_center = document.getElementById("controll_center");
         const controlls = document.getElementById("controlls");
         const controlls2 = document.getElementById("controlls2");
+        const controlls3 = document.getElementById("controlls3");
         const controlElements = document.querySelectorAll(".controll");
         const controlElements2 = document.querySelectorAll(".controll2");
+        const controlElements3 = document.querySelectorAll(".controll3");
         const buttons = document.querySelectorAll(".btn");
         const buttons2 = document.querySelectorAll(".btn2");
         const buttons3 = document.querySelectorAll(".btn3");
@@ -240,6 +278,8 @@
             controlls.classList.remove("scale-90");
             wallpaper.classList.add("scale-95");
             wallpaper.classList.add("blur-sm");
+            status.classList.remove("-translate-y-10")
+            status.classList.remove("opacity-0")
 
             setTimeout(() => {
                 controlElements.forEach(controll => {
@@ -257,6 +297,8 @@
             controlls.classList.add("scale-90");
             wallpaper.classList.remove("scale-95");
             wallpaper.classList.remove("blur-sm");
+            status.classList.add("-translate-y-10")
+            status.classList.add("opacity-0")
 
             setTimeout(() => {
                 controlElements.forEach(controll => {
@@ -271,6 +313,8 @@
             // controll_center.classList.remove("backdrop-blur-lg");
             controlls.classList.add("opacity-0", "scale-90");
             controlls2.classList.remove("opacity-0", "scale-90");
+            status.classList.add("opacity-0")
+            controlls2.classList.add("z-[999]");
             
             setTimeout(() => {
                 controlls.classList.add("hidden");
@@ -287,16 +331,58 @@
         cellularOff.addEventListener("click", () => {
             // controll_center.classList.remove("backdrop-blur-lg");
             controlls2.classList.add("opacity-0", "scale-90");
-            
+
             setTimeout(() => {
                 controlls.classList.remove("hidden");
                 controlls2.classList.add("hidden");
+                controlls2.classList.remove("z-[999]");
                 controlElements2.forEach(controll => {
                     controll.classList.add("scale-0");
                     controll.classList.add("opacity-0");
                 });
                 setTimeout(() => {
                     controlls.classList.remove("opacity-0", "scale-90");
+                    status.classList.remove("opacity-0")
+                }, 100);
+            }, 300);
+        });
+        
+        ctrl3Btn.addEventListener("click", () => {
+            // controll_center.classList.remove("backdrop-blur-lg");
+            controlls.classList.add("opacity-0", "scale-90");
+            controlls3.classList.remove("opacity-0", "scale-90");
+            controlls3.classList.add("z-[999]");
+            status.classList.add("opacity-0")
+            ctrl3BtnOff.classList.remove("scale-0")
+            
+            setTimeout(() => {
+                controlls.classList.add("hidden");
+                controlls3.classList.remove("hidden");
+                setTimeout(() => {
+
+                    controlElements3.forEach(controll => {
+                        controll.classList.remove("scale-0");
+                        controll.classList.remove("opacity-0");
+                    });
+                }, 100);
+            }, 300);
+        });
+        ctrl3BtnOff.addEventListener("click", () => {
+            // controll_center.classList.remove("backdrop-blur-lg");
+            controlls3.classList.add("opacity-0", "scale-90");
+            ctrl3BtnOff.classList.add("scale-0")
+
+            setTimeout(() => {
+                controlls.classList.remove("hidden");
+                controlls3.classList.add("hidden");
+                controlls3.classList.remove("z-[999]");
+                controlElements3.forEach(controll => {
+                    controll.classList.add("scale-0");
+                    controll.classList.add("opacity-0");
+                });
+                setTimeout(() => {
+                    controlls.classList.remove("opacity-0", "scale-90");
+                    status.classList.remove("opacity-0")
                 }, 100);
             }, 300);
         });
