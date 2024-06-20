@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Control Center</title>
     <link rel="stylesheet" href="output.css">
 </head>
 
 <body>
-    <div class="flex w-screen h-screen items-center justify-center">
-        <div class="relative w-fit border-[10px] border-black rounded-[3.2rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
+    <div class="flex w-screen h-screen items-center justify-center bg-bla ck/90">
+        <div class="absolute w-full h-full -z-10 top-0 left-0 flex items-center justify-center">
+            <img src="img/iphone15pro.png" alt="" class="h-[690px]">
+        </div>
+        <div class="relative w-fit border-[10px] outline-5 outline-gray-400 border-black rounded-[3.2rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
             <img src="img/home_screen.png" id="wallpaper" alt="" class="duration-300">
             <div class="absolute w-full p-[0.55rem] top-0 left-0 flex items-center justify-center">
                 <button id="dynamic_island" class="w-[95px] hover:w-[105px] z-[9999] active:w-[95px] h-[28px] rounded-[2.1rem] duration-500 ease-out bg-black overflow-hidden">
