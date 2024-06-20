@@ -9,232 +9,238 @@
 </head>
 
 <body>
-    <div class="flex w-screen h-screen items-center justify-center bg-bla ck/90">
-        <div class="absolute w-full h-full -z-10 top-0 left-0 flex items-center justify-center">
-            <img src="img/iphone15pro.png" alt="" class="h-[690px]">
-        </div>
-        <div class="relative w-fit border-[10px] outline-5 outline-gray-400 border-black rounded-[3.2rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
-            <img src="img/home_screen.png" id="wallpaper" alt="" class="duration-300">
-            <div class="absolute w-full p-[0.55rem] top-0 left-0 flex items-center justify-center">
-                <button id="dynamic_island" class="w-[95px] hover:w-[105px] z-[9999] active:w-[95px] h-[28px] rounded-[2.1rem] duration-500 ease-out bg-black overflow-hidden">
-
-                    <div id="dynamic_control" class="px-4 py-5 text-white opacity-0">
-                        <div class="flex justify-between h-fit">
-                            <div class="flex">
-                                <img src="img/music.png" alt="" class="w-[50px] h-[50px] rounded-xl">
-                                <div class="">
-                                    <div class="text-lg mt-1 -mb-2 ps-2">Better now</div>
-                                    <div class="text-sm mb-2">Post Malone</div>
-                                </div>
-                            </div>
-                            <img src="img/voice.png" alt="" class="h-[30px] invert">
-                        </div>
-                        <div class="flex px-2 pt-2 pb-1 items-center gap-2">
-                            <div class="">2:16</div>
-                            <div class="h-[0.4rem] flex-grow bg-white/20 rounded-s-full rounded-e-full overflow-hidden">
-                                <div class="w-2/3 h-full bg-white"></div>
-                            </div>
-                            <div class="">3:48</div>
-                        </div>
-                        <div class="flex items-center justify-center gap-5">
-                            <img src="img/next.png" alt="" class="h-5 scale-x-150 invert rotate-180">
-                            <img src="img/play.png" alt="" class="h-8 invert">
-                            <img src="img/next.png" alt="" class="h-5 scale-x-150 invert">
-                        </div>
-                    </div>
-                </button>
+    <div class="flex">
+        <div class="flex relative w-screen xl:w-[30vw] h-screen items-center justify-center bg-bla ck/90">
+            <div class="absolute w-full h-full -z-10 top-0 left-0 flex items-center justify-center">
+                <img src="img/iphone15pro.png" alt="" class="h-[685px]">
             </div>
-
-            <button id="ctrlBtn" class="absolute top-2 right-5 w-20 h-8 z-[200] bg-transparent"></button>
-            
-            <div id="controll_center"
-            class="absolute opacity-0 w-full h-full z-10 top-0 left-0 duration-300 flex items-center justify-center">
-
-                <div id="status" class="absolute opacity-0 top-0 left-0 pt-2 w-full -translate-y-10 duration-300">
-                    <div class=" w-full flex justify-between px-8 text-white text-[0.9rem]">
-                        <div class="text-white text-lg font-semibold">+</div>
-                        <img src="img/power.png" alt="" class="mt-2 h-4 invert">
+            <div class="relative w-fit border-[10px] border-black rounded-[3.35rem] overflow-hidden bg-[url('img/home_screen.png')] backdrop-blur-md">
+                <img src="img/home_screen.png" id="wallpaper" alt="" class="duration-300">
+                <div class="absolute w-full p-[0.55rem] top-0 left-0 flex items-center justify-center">
+                    <button id="dynamic_island" class="w-[95px] hover:w-[105px] z-[9999] active:w-[95px] h-[28px] rounded-[2.1rem] duration-500 ease-out bg-black overflow-hidden">
+    
+                        <div id="dynamic_control" class="px-4 py-5 text-white opacity-0">
+                            <div class="flex justify-between h-fit">
+                                <div class="flex">
+                                    <img src="img/music.png" alt="" class="w-[50px] h-[50px] rounded-xl">
+                                    <div class="">
+                                        <div class="text-lg mt-1 -mb-2 ps-2">Better now</div>
+                                        <div class="text-sm mb-2">Post Malone</div>
+                                    </div>
+                                </div>
+                                <img src="img/voice.png" alt="" class="h-[30px] invert">
+                            </div>
+                            <div class="flex px-2 pt-2 pb-1 items-center gap-2">
+                                <div class="">2:16</div>
+                                <div class="h-[0.4rem] flex-grow bg-white/20 rounded-s-full rounded-e-full overflow-hidden">
+                                    <div class="w-2/3 h-full bg-white"></div>
+                                </div>
+                                <div class="">3:48</div>
+                            </div>
+                            <div class="flex items-center justify-center gap-5">
+                                <img src="img/next.png" alt="" class="h-5 scale-x-150 invert rotate-180">
+                                <img src="img/play.png" alt="" class="h-8 invert">
+                                <img src="img/next.png" alt="" class="h-5 scale-x-150 invert">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+    
+                <button id="ctrlBtn" class="absolute top-2 right-5 w-20 h-8 z-[200] bg-transparent"></button>
+                
+                <div id="controll_center"
+                class="absolute opacity-0 w-full h-full z-10 top-0 left-0 duration-300 flex items-center justify-center">
+    
+                    <div id="status" class="absolute opacity-0 top-0 left-0 pt-2 w-full -translate-y-10 duration-300">
+                        <div class=" w-full flex justify-between px-8 text-white text-[0.9rem]">
+                            <div class="text-white text-lg font-semibold">+</div>
+                            <img src="img/power.png" alt="" class="mt-2 h-4 invert">
+                        </div>
+        
+                        <div class="mt-5 w-full flex justify-between px-8 text-white text-[0.9rem]">
+                            <div class="flex items-center gap-1">
+                                <img src="img/data.png" alt="" class="h-3 invert brightness-0">
+                                4G LTE
+                                <img src="img/wifi.png" alt="" class="h-4 invert">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                @ 74%
+                                <img src="img/battery.png" alt="" class="h-6 invert">
+                            </div>
+                        </div>
                     </div>
     
-                    <div class="mt-5 w-full flex justify-between px-8 text-white text-[0.9rem]">
-                        <div class="flex items-center gap-1">
-                            <img src="img/data.png" alt="" class="h-3 invert brightness-0">
-                            4G LTE
-                            <img src="img/wifi.png" alt="" class="h-4 invert">
+    
+    
+                    <button id="ctrlOff" class="absolute top-0 left-0 w-full h-full z-[500] hidden"></button>
+                    <div id="controlls"
+                        class="grid pt-8 grid-cols-2 z-[600] gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem]">
+                        
+                        
+                        <div
+                            class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-2 p-[0.6rem]">
+                            <button id="airplane" class="duration-500 bg-white/10 col-span-1 row-span-1 rounded-full">
+                                <img src="img/airplane.png" class="w-full h-full invert p-2" alt="">
+                            </button>
+                            <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
+                                <img src="img/airdrop.png" class="w-full h-full p-[0.3rem] brightness-150" alt="">
+                            </button>
+                            <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
+                                <img src="img/wifi.png" class="w-full h-full p-[0.6rem] brightness-150 invert" alt="">
+                            </button>
+                            <button id="cellularBtn" class="col-span-1 row-span-1 grid grid-cols-2 grid-rows-2 gap-1 opacity-80">
+                                <div class="bg-green-400 rounded-full">
+                                    <img src="img/cellular.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                                </div>
+                                <div class="bg-blue-500 rounded-full">
+                                    <img src="img/bluetooth.png" alt="" class="w-full h-full p-[0.2rem] brightness-150 invert">
+                                </div>
+                                <div class="bg-black/10 rounded-full">
+                                    <img src="img/link.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                                </div>
+                                <div class="bg-white/10 rounded-full">
+                                    <img src="img/mirror.png" alt="" class="w-full h-full p-[0.2rem] invert">
+                                </div>
+                            </button>
                         </div>
-                        <div class="flex items-center gap-1">
-                            @ 74%
-                            <img src="img/battery.png" alt="" class="h-6 invert">
+                        <div
+                            class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-rows-2 grid-cols-1 gap-2 p-3">
+                            <div class="flex justify-between">
+                                <div class="h-[42px] w-[42px] bg-slate-300/80 rounded-xl"></div>
+                                <div class="h-[27px] w-[27px] bg-white/20 rounded-full">
+                                    <img src="img/airdrop.png" alt="" class="w-full h-full p-1 brightness-150">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="text-white text-[0.7rem] ps-1">Not Playing</div>
+                                <div class="flex items-center justify-center gap-3 p-1">
+                                    <img src="img/next.png" alt="" class="h-[12px] invert rotate-180 scale-x-150">
+                                    <img src="img/play.png" alt="" class="h-[22px] invert">
+                                    <img src="img/next.png" alt="" class="h-[12px] invert scale-x-150">
+                                </div>
+                            </div>
                         </div>
+    
+                        <div
+                            class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/rotate.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/screenMirror.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button id="ctrl3Btn" class="controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
+                                <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
+                                    <img src="img/focus.png" alt="" class="w-full h-full p-2 invert">
+                                </div>
+                                <div class="text-white text-sm">Focus</div>
+                            </button>
+                        </div>
+                        <div
+                            class="ease-out h-[115px] rounded-[25px] grid grid-cols-2 gap-2">
+                            <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
+                                <div class="bg-white/90 w-full h-2/3 flex items-end justify-center pb-2">
+                                    <img src="img/brightnessYellow.png" alt="" class="w-[26px] h-[26px] opacity-90 brightness-125">
+                                </div>
+                            </div>
+                            <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
+                                <div class="bg-white/90 w-full h-1/3 flex items-end justify-center pb-2">
+                                    <img src="img/speakerBLue.png" alt="" class="w-[27px] h-[27px] opacity-90">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div
+                            class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                            <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/torch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button class="btn3 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/record.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/battery.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/stopwatch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                        </div>
+                        <div
+                            class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
+                                <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
+                                    <img src="img/lock.png" alt="" class="w-full h-full p-2 invert scale-x-90">
+                                </div>
+                                <div class="text-white text-[0.6rem] flex flex-col">
+                                    <div class="-mb-1 opacity-80">Entrance</div>
+                                    <div class="text-sm">Door</div>
+                                    <div class="-mt-1 opacity-80">Locked</div>
+                                </div>
+                            </button> 
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 ps-3 gap-1">
+                                <div class="rounded-full h-[35px] w-[35px]">
+                                    <img src="img/leave.png" alt="" class="w-full h-full p-[0.3rem] invert">
+                                </div>
+                                <div class="text-white text-[0.84rem] flex flex-col justify-center">
+                                    <div class="-mb-1">Leave</div>
+                                    <div class="-mt-1">Home</div>
+                                </div>
+                            </button> 
+                        </div>
+                        
+                        <button 
+                            class="controll btn2 scale-0 opacity-0 duration-[1000ms] ease-out bg-black/25 h-[115px] rounded-[25px] flex flex-col justify-between p-3">
+                            <img src="img/bulb.png" alt="" class="w-[30px] h-[30px] invert">
+                            <div class="text-white text-[0.75rem] text-start p-1">Scene or Accessory</div>
+                        </button>
+                        <div
+                            class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/shazam.png" alt="" class="w-full h-full p-[0.65rem] brightness-0 invert">
+                            </button>
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/alarm.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                            <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/accessibility.png" alt="" class="w-full h-full p-[0.8rem] brightness-0 invert">
+                            </button>
+                            <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
+                                <img src="img/calculator.png" alt="" class="w-full h-full p-3 brightness-0 invert">
+                            </button>
+                        </div>
+                    </div>
+    
+                    <button id="cellularOff" class="absolute top-0 left-0 w-full h-full z-[920] controll2 scale-0 duration-[500ms]"></button>
+                    <div id="controlls2"
+                        class="grid z-[600] relative grid-cols-1 grid-rows-8 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
+                        <div class="controll2 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[1100ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll2 scale-0 ease-out duration-[1200ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                    
+                    </div>
+    
+                    <button id="ctrl3BtnOff" class="absolute top-0 left-0 w-full h-full z-[900] controll2 scale-0 duration-[500ms]"></button>
+                    <div id="controlls3"
+                    class="grid z-[600] relative grid-cols-1 grid-rows-6 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
+                        <div class="controll3 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll3 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll3 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll3 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll3 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
+                        <div class="controll3 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
                     </div>
                 </div>
-
-
-
-                <button id="ctrlOff" class="absolute top-0 left-0 w-full h-full z-[500] hidden"></button>
-                <div id="controlls"
-                    class="grid pt-8 grid-cols-2 z-[600] gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem]">
-                    
-                    
-                    <div
-                        class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-2 p-[0.6rem]">
-                        <button id="airplane" class="duration-500 bg-white/10 col-span-1 row-span-1 rounded-full">
-                            <img src="img/airplane.png" class="w-full h-full invert p-2" alt="">
-                        </button>
-                        <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
-                            <img src="img/airdrop.png" class="w-full h-full p-[0.3rem] brightness-150" alt="">
-                        </button>
-                        <button class="btn duration-500 bg-blue-500 col-span-1 row-span-1 rounded-full">
-                            <img src="img/wifi.png" class="w-full h-full p-[0.6rem] brightness-150 invert" alt="">
-                        </button>
-                        <button id="cellularBtn" class="col-span-1 row-span-1 grid grid-cols-2 grid-rows-2 gap-1 opacity-80">
-                            <div class="bg-green-400 rounded-full">
-                                <img src="img/cellular.png" alt="" class="w-full h-full p-[0.2rem] invert">
-                            </div>
-                            <div class="bg-blue-500 rounded-full">
-                                <img src="img/bluetooth.png" alt="" class="w-full h-full p-[0.2rem] brightness-150 invert">
-                            </div>
-                            <div class="bg-black/10 rounded-full">
-                                <img src="img/link.png" alt="" class="w-full h-full p-[0.2rem] invert">
-                            </div>
-                            <div class="bg-white/10 rounded-full">
-                                <img src="img/mirror.png" alt="" class="w-full h-full p-[0.2rem] invert">
-                            </div>
-                        </button>
-                    </div>
-                    <div
-                        class="controll scale-0 opacity-0 duration-[400ms] ease-out bg-black/25 h-[115px] rounded-[25px] grid grid-rows-2 grid-cols-1 gap-2 p-3">
-                        <div class="flex justify-between">
-                            <div class="h-[42px] w-[42px] bg-slate-300/80 rounded-xl"></div>
-                            <div class="h-[27px] w-[27px] bg-white/20 rounded-full">
-                                <img src="img/airdrop.png" alt="" class="w-full h-full p-1 brightness-150">
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="text-white text-[0.7rem] ps-1">Not Playing</div>
-                            <div class="flex items-center justify-center gap-3 p-1">
-                                <img src="img/next.png" alt="" class="h-[12px] invert rotate-180 scale-x-150">
-                                <img src="img/play.png" alt="" class="h-[22px] invert">
-                                <img src="img/next.png" alt="" class="h-[12px] invert scale-x-150">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/rotate.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/screenMirror.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button id="ctrl3Btn" class="controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
-                            <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
-                                <img src="img/focus.png" alt="" class="w-full h-full p-2 invert">
-                            </div>
-                            <div class="text-white text-sm">Focus</div>
-                        </button>
-                    </div>
-                    <div
-                        class="ease-out h-[115px] rounded-[25px] grid grid-cols-2 gap-2">
-                        <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
-                            <div class="bg-white/90 w-full h-2/3 flex items-end justify-center pb-2">
-                                <img src="img/brightnessYellow.png" alt="" class="w-[26px] h-[26px] opacity-90 brightness-125">
-                            </div>
-                        </div>
-                        <div class="controll scale-0 opacity-0 duration-[600ms] bg-black/25 rounded-2xl flex items-end overflow-hidden">
-                            <div class="bg-white/90 w-full h-1/3 flex items-end justify-center pb-2">
-                                <img src="img/speakerBLue.png" alt="" class="w-[27px] h-[27px] opacity-90">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
-                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/torch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button class="btn3 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/record.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/battery.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/stopwatch.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                    </div>
-                    <div
-                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 gap-2">
-                            <div class="bg-white/10 rounded-full h-[35px] w-[35px]">
-                                <img src="img/lock.png" alt="" class="w-full h-full p-2 invert scale-x-90">
-                            </div>
-                            <div class="text-white text-[0.6rem] flex flex-col">
-                                <div class="-mb-1 opacity-80">Entrance</div>
-                                <div class="text-sm">Door</div>
-                                <div class="-mt-1 opacity-80">Locked</div>
-                            </div>
-                        </button> 
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-2 row-span-1 rounded-[1.1rem] bg-black/25 flex items-center p-2 ps-3 gap-1">
-                            <div class="rounded-full h-[35px] w-[35px]">
-                                <img src="img/leave.png" alt="" class="w-full h-full p-[0.3rem] invert">
-                            </div>
-                            <div class="text-white text-[0.84rem] flex flex-col justify-center">
-                                <div class="-mb-1">Leave</div>
-                                <div class="-mt-1">Home</div>
-                            </div>
-                        </button> 
-                    </div>
-                    
-                    <button 
-                        class="controll btn2 scale-0 opacity-0 duration-[1000ms] ease-out bg-black/25 h-[115px] rounded-[25px] flex flex-col justify-between p-3">
-                        <img src="img/bulb.png" alt="" class="w-[30px] h-[30px] invert">
-                        <div class="text-white text-[0.75rem] text-start p-1">Scene or Accessory</div>
-                    </button>
-                    <div
-                        class="h-[115px] rounded-[25px] grid grid-cols-2 grid-rows-2 gap-3">
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/shazam.png" alt="" class="w-full h-full p-[0.65rem] brightness-0 invert">
-                        </button>
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/alarm.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                        <button class="btn4 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/accessibility.png" alt="" class="w-full h-full p-[0.8rem] brightness-0 invert">
-                        </button>
-                        <button class="btn2 controll scale-0 opacity-0 duration-[800ms] col-span-1 row-span-1 rounded-full bg-black/25">
-                            <img src="img/calculator.png" alt="" class="w-full h-full p-3 brightness-0 invert">
-                        </button>
-                    </div>
-                </div>
-
-                <button id="cellularOff" class="absolute top-0 left-0 w-full h-full z-[920] controll2 scale-0 duration-[500ms]"></button>
-                <div id="controlls2"
-                    class="grid z-[600] relative grid-cols-1 grid-rows-8 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
-                    <div class="controll2 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[1100ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll2 scale-0 ease-out duration-[1200ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
                 
-                </div>
-
-                <button id="ctrl3BtnOff" class="absolute top-0 left-0 w-full h-full z-[900] controll2 scale-0 duration-[500ms]"></button>
-                <div id="controlls3"
-                class="grid z-[600] relative grid-cols-1 grid-rows-6 gap-[0.8rem] w-[90%] scale-90 duration-500 p-[0.84rem] hidden">
-                    <div class="controll3 scale-0 ease-out duration-[500ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll3 scale-0 ease-out duration-[600ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll3 scale-0 ease-out duration-[700ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll3 scale-0 ease-out duration-[800ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll3 scale-0 ease-out duration-[900ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                    <div class="controll3 scale-0 ease-out duration-[1000ms] w-full h-[50px] rounded-s-full rounded-e-full bg-black/25"></div>
-                </div>
             </div>
-            
+        </div>
+
+        <div class="hidden xl:flex w-[70vw] items-center justify-center">
+            <img src="img/ios18.png" alt="" class="w-full brightness-110">
         </div>
     </div>
 
